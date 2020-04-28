@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sendVideo">
+    <VideoView
+        android:id="@+id/images"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:paddingTop="20dp" />
+    <TextView
+        android:id="@+id/path"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/images"
+        android:paddingTop="10dp"/>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/path">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="桩号:"
+            android:textSize="14sp"/>
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/zhuanghao"
+            android:inputType="number"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/send"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="上传"
+        android:layout_below="@+id/images"
+        android:layout_marginTop="80dp"/>
+
+</RelativeLayout>
